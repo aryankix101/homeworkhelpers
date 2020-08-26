@@ -27,7 +27,10 @@ class PathwayPage extends Component {
                                 <div class="container">
                                     <div class="col-lg-12">
                                     {this.state.todos.map((todo) => (
-                                        <p id="titletext">{todo.name}</p>
+                                        <p id="titletext">{todo.name} <br/>
+                                        Completed pathways: {todo.completed_pathway}
+                                        <br/>
+                                        Completed badges: {todo.badge}</p>
                                     ))}
                                     </div>
                                 </div>
