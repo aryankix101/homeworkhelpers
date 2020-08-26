@@ -8,7 +8,7 @@ class Navbar extends Component {
                 <nav class="navbar navbar-expand-lg navbar-dark info-color fixed-top" style={{backgroundColor: "#374785"}}>
                     <div class="container">
                         <a class="navbar-brand" href="/">
-                            <strong>The Homework Helpers Organization</strong>
+                            The Homework Helpers Organization
                         </a>
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
@@ -16,30 +16,30 @@ class Navbar extends Component {
                         <div class="collapse navbar-collapse" id="navbarResponsive">
                         <ul class="navbar-nav ml-auto">
                             <li class="nav-item active">
-                            <a class="nav-link" href="/"><strong>Home</strong>
+                            <a class="nav-link" href="/">Home
                                     <span class="sr-only">(current)</span>
                                 </a>
                             </li>
                             <li class="nav-item">
-                            <a class="nav-link" href="#about"><strong>Models</strong></a>
+                            <a class="nav-link" href="#about">Models</a>
                             </li>
                             <li class="nav-item">
-                            <a class="nav-link" href="#services"><strong>Our Mission</strong></a>
+                            <a class="nav-link" href="#services">Our Mission</a>
                             </li>
                             <li class="nav-item">
-                            <a class="nav-link" href="#goals"><strong>Goals</strong></a>
+                            <a class="nav-link" href="#goals">Goals</a>
                             </li>
                             <li class="nav-item">
-                            <a class="nav-link" href="#story"><strong>Our Story</strong></a>
+                            <a class="nav-link" href="#story">Our Story</a>
                             </li>
                             <li class="nav-item">
-                            <a class="nav-link" href="#program"><strong>How are We Different?</strong></a>
+                            <a class="nav-link" href="#program">How are We Different?</a>
                             </li>
                             <li class="nav-item">
-                            <a class="nav-link" href="#contact"><strong>Contact</strong></a>
+                            <a class="nav-link" href="#contact">Contact</a>
                             </li>
                             <li class="nav-item">
-                            <a class="nav-link" href="#"><strong>Login</strong></a>
+                            <a class="nav-link" href="#">Login</a>
                             </li>
                         </ul>
                         </div>
