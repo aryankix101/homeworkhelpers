@@ -17,30 +17,30 @@ class Navbar extends Component {
                         <div class="collapse navbar-collapse" id="navbarResponsive">
                         <ul class="navbar-nav ml-auto">
                             <li class="nav-item active">
-                            <a class="nav-link" href="/">Home
+                            <a class="nav-link" href="/" id="navbartext">Home
                                     <span class="sr-only">(current)</span>
                                 </a>
                             </li>
                             <li class="nav-item">
-                            <a class="nav-link" href="#about">Models</a>
+                            <a class="nav-link" href="#about" id="navbartext">Models</a>
                             </li>
                             <li class="nav-item">
-                            <a class="nav-link" href="#services">Our Mission</a>
+                            <a class="nav-link" href="#services" id="navbartext">Our Mission</a>
                             </li>
                             <li class="nav-item">
-                            <a class="nav-link" href="#goals">Goals</a>
+                            <a class="nav-link" href="#goals" id="navbartext">Goals</a>
                             </li>
                             <li class="nav-item">
-                            <a class="nav-link" href="#story">Our Story</a>
+                            <a class="nav-link" href="#story" id="navbartext">Our Story</a>
                             </li>
                             <li class="nav-item">
-                            <a class="nav-link" href="#program">How are We Different?</a>
+                            <a class="nav-link" href="#program" id="navbartext">How are We Different?</a>
                             </li>
                             <li class="nav-item">
-                            <a class="nav-link" href="#contact">Contact</a>
+                            <a class="nav-link" href="#" id="navbartext">Steam Pathways</a>
                             </li>
                             <li class="nav-item">
-                            <a class="nav-link" href="#">Steam Pathways</a>
+                            <a class="nav-link" href="#contact" id="navbartext">Contact</a>
                             </li>
                         </ul>
                         </div>

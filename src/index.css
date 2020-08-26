@@ -22,6 +22,10 @@ code {
  font: bolder 50px Cinzel; 
 }
 
+#navbartext {
+  font: 15px Poppins; 
+}
+
 #titletext {
   color: white; 
   font: bold 20px Poppins; 
