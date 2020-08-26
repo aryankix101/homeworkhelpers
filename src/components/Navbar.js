@@ -37,7 +37,7 @@ class Navbar extends Component {
                             <a class="nav-link" href="#program" id="navbartext">How are We Different?</a>
                             </li>
                             <li class="nav-item">
-                            <a class="nav-link" href="#" id="navbartext">Steam Pathways</a>
+                            <a class="nav-link" href="/steam-pathways" id="navbartext">Steam Pathways</a>
                             </li>
                             <li class="nav-item">
                             <a class="nav-link" href="#contact" id="navbartext">Contact</a>
