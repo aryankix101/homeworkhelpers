@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Logo from '../logo_1_5.png'
 
 class Navbar extends Component {
     state = {  }
@@ -8,7 +9,7 @@ class Navbar extends Component {
                 <nav class="navbar navbar-expand-lg navbar-dark info-color fixed-top" style={{backgroundColor: "#374785"}}>
                     <div class="container">
                         <a class="navbar-brand" href="/">
-                            The Homework Helpers Organization
+                            <img src={Logo}/>
                         </a>
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
@@ -39,7 +40,7 @@ class Navbar extends Component {
                             <a class="nav-link" href="#contact">Contact</a>
                             </li>
                             <li class="nav-item">
-                            <a class="nav-link" href="#">Login</a>
+                            <a class="nav-link" href="#">Steam Pathways</a>
                             </li>
                         </ul>
                         </div>
