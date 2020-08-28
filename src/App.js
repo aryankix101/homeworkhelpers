@@ -3,7 +3,7 @@ import './App.css';
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import Navbar from './components/Navbar.js'
 import HomePage from './components/Home.js'
-import PathwayPage from './components/Pathways.tsx'
+import PathwayPage from './components/Pathways.js'
 import Slide from 'react-reveal/Slide';
 
 function App() {

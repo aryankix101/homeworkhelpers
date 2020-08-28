@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import {FunctionComponent, useState, useEffect } from 'react';
-import Fade from 'react-reveal/Fade';
 import Footer from './Footer.js'
 
 
@@ -27,10 +26,7 @@ class PathwayPage extends Component {
                                 <div class="container">
                                     <div class="col-lg-12">
                                     {this.state.todos.map((todo) => (
-                                        <p id="titletext">{todo.name} <br/>
-                                        Completed pathways: {todo.completed_pathway}
-                                        <br/>
-                                        Completed badges: {todo.badge}</p>
+                                        <p id="titletext">{todo.name}</p>
                                     ))}
                                     </div>
                                 </div>
@@ -41,5 +37,5 @@ class PathwayPage extends Component {
         );
     }
 }
- 
-export default PathwayPage;
+
+export default PathwayPage; 
