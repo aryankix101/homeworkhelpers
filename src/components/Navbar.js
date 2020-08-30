@@ -40,6 +40,9 @@ class Navbar extends Component {
                             <a class="nav-link" href="/steam-pathways" id="navbartext">Steam Pathways</a>
                             </li>
                             <li class="nav-item">
+                            <a class="nav-link" href="/study-buddy" id="navbartext">Study Buddy</a>
+                            </li>
+                            <li class="nav-item">
                             <a class="nav-link" href="#contact" id="navbartext">Contact</a>
                             </li>
                         </ul>
