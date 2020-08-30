@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
 import Fade from 'react-reveal/Fade';
+import Footer from './Footer.js'
 
 class StudyBuddyPage extends Component {
     state = {  }
     render() { 
         return (
             <Fade top>
+            <div>
             <header>
                     <body>
                         <style>{'body { background-color: #A8D0E6; }'}</style>
@@ -18,6 +20,8 @@ class StudyBuddyPage extends Component {
                             </div>
                     </body>
             </header>
+            <Footer/>
+            </div>
             </Fade>
           );
     }
