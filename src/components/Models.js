@@ -19,7 +19,7 @@ In this model, the middle school tutors convene at a known location in the eveni
 <br/><br/>
 Currently implemented in:<br/>
 
-Rocky Run Middle School<br/>
+<i>Rocky Run Middle School</i><br/>
 
 (Catering to five local elementary schools)</p>
                                 </div>
@@ -29,12 +29,12 @@ As our most popular Model, the Teacher Helper Model allows middle school student
 <br/><br/>
 Currently implemented between:<br/>
 
-Herndon Middle and Elementary Schools</p>
+<i>Herndon Middle and Elementary Schools</i></p>
                                 </div>
                                 <div class="col-lg-4">
                                     <p><h2>SACC</h2>The SACC Model takes place directly after elementary school as part of the school's School Age Child Care Program. Parent or after school volunteers are needed to transport tutors to the elementary school SACC. <br/><br/> Currently implemented in:<br/>
 
-Brookfield Elementary School</p>
+<i>Brookfield Elementary School</i></p>
                                 </div>
                             </div>
                         </div>
