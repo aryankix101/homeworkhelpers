@@ -5,14 +5,14 @@ import Footer from './Footer.js'
 
 class PathwayPage extends Component {
     state = {
-        todos: []
+        student_data: []
       }
       componentDidMount() {
         fetch('/spreadsheet-data')
         .then(res => res.json())
         .then((data) => {
-          this.setState({ todos: data })
-          console.log(this.state.todos)
+          this.setState({ student_data: data })
+          console.log(this.state.student_data)
         })
         .catch(console.log)
       }
@@ -25,8 +25,8 @@ class PathwayPage extends Component {
                             <style>{'body { background-color: #A8D0E6; }'}</style>
                                 <div class="container">
                                     <div class="col-lg-12">
-                                    {this.state.todos.map((todo) => (
-                                        <p id="titletext">Hello {todo.name}! You have completed the {todo.completed_pathway}.<br/> Badges completed: {todo.badge}.</p>
+                                    {this.state.student_data.map((student) => (
+                                        <p id="titletext">Hello {student.first_name}! You have completed the {student.completed_pathway}.<br/> Badges completed: {student.badge}.</p>
                                     ))}
                                     </div>
                                 </div>
