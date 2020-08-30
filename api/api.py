@@ -14,9 +14,13 @@ gsheet = client.open("Certificate Data").sheet1
 
 @app.route('/spreadsheet-data', methods=["GET"])
 def get_spreadsheet_data():
-    #get_all_records needs to be replaced, it should instead get the information from the username in the login method. Get the data from its row.
+    #get_all_records needs to be replaced, it should instead get the information from the username in the login method. Get the data from it's row.
     return jsonify(gsheet.get_all_records())
 
+
+@app.route('/')
+def home():
+    return "Success!"  # return a string
 
 @app.route('/login', methods=['GET', 'POST'])
 def login():
