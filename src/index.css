@@ -45,6 +45,11 @@ code {
   background-color: #F76C6C;
 }
 
+#loginsubmit {
+  color: white;
+  background-color: #F76C6C;
+}
+
 #getstarted {
   margin-left: 10px;
   font-family: Chilanka;
@@ -146,4 +151,8 @@ form .row:first-child .floating-label-form-group {
 
 #footer {
   padding-top: 30px;
+}
+
+#login {
+  padding-top:100px;
 }
