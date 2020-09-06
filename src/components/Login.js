@@ -78,7 +78,7 @@ class LoginPage extends Component {
                         </form>
                     </div>
                 </div>
-                {this.state.send && <StudentDashboardPage student_first_name={this.state.student_first_name} student_badge={this.state.student_badge} student_copmleted_pathway={this.state.student_completed_pathway} />}
+                {this.state.send && <StudentDashboardPage student_first_name={this.state.student_first_name} student_badge={this.state.student_badge} student_completed_pathway={this.state.student_completed_pathway} />}
                 </body>
             </div>
             </Zoom>
