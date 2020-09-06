@@ -7,7 +7,7 @@ import PathwayPage from './components/Pathways.js'
 import StudyBuddyPage from './components/StudyBuddy.js'
 import LoginPage from './components/Login.js'
 import Slide from 'react-reveal/Slide';
-import StudentDashboardPage from './components/StudentDashboard';
+import CurriculumPage from './components/Curriculum.js';
 
 function App() {
   return (
@@ -21,7 +21,7 @@ function App() {
             <Route exact path="/steam-pathways" component={PathwayPage}/>
             <Route exact path="/study-buddy" component={StudyBuddyPage}/>
             <Route exact path="/login" component={LoginPage}/>
-            <Route exact path="/student-dashboard" component={StudentDashboardPage}/>
+            <Route exact path="/curriculums" component={CurriculumPage}/>
         </Switch>
       </div>
     </BrowserRouter>
