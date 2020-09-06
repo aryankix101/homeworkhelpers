@@ -13,7 +13,7 @@ class Header extends Component {
                                     <h2 id="title" style={{textAlign: "center"}}>WE ARE HOMEWORK HELPERS</h2>
                                     <hr class="star-light"/>
                                     <p id="titletext">We are an organization that aims to provide educational assistance to students attending Title 1 schools.</p>
-                                    <a href="https://drive.google.com/file/d/16xzAAp-xLIjVT-1qteEF6fEM7vX7x1M7/view" target="_blank" type="button" class="btn rounded-pill btn-lg" id="video">Video!</a>
+                                    <a href="https://www.youtube.com/watch?v=UJXNMVRarQ0&feature=youtu.be" target="_blank" type="button" class="btn rounded-pill btn-lg" id="video">Video!</a>
                                     <a href="/steam-pathways" type="button" class="btn rounded-pill btn-lg" id="getstarted">Check out our new virtual program!</a>
                                 </div>
                             </div>
