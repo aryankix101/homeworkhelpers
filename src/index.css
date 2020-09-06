@@ -156,3 +156,8 @@ form .row:first-child .floating-label-form-group {
 #login {
   padding-top:100px;
 }
+
+#badge_text {
+  font-family: Chilanka;
+  color: white;
+}
