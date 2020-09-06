@@ -4,7 +4,7 @@ class ContactPage extends Component {
     state = {  }
     render() { 
         return (
-            <section id="contact">
+            <section class="notsuccess" id="contact">
                         <div class="container">
                             <div class="row">
                                 <div class="col-lg-12 text-center">

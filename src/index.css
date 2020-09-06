@@ -68,6 +68,11 @@ section.success {
   background: #18bc9c;
 }
 
+section.notsuccess {
+  color: #fff;
+  background: #A8D0E6;
+}
+
 hr.star-light,
 hr.star-primary {
     margin: 25px auto 30px;
@@ -160,4 +165,14 @@ form .row:first-child .floating-label-form-group {
 #badge_text {
   font-family: Chilanka;
   color: white;
+}
+
+#background_image{
+  background-image: url(./MembersCollage.png);
+  background-size: 1540px 925px;
+}
+
+#curriculum {
+  margin-top:125px;
+  margin-left:100px;
 }

@@ -1,4 +1,3 @@
-
 import React, { Component } from 'react';
 
 class Header extends Component {
@@ -7,7 +6,7 @@ class Header extends Component {
         return (
             <header>
                     <body>
-                        <style>{'body { background-color: #A8D0E6; }'}</style>
+                        <div id="background_image">
                             <div class="container">
                                 <div class="col-lg-12">
                                     <h2 id="title" style={{textAlign: "center"}}>WE ARE HOMEWORK HELPERS</h2>
@@ -17,6 +16,7 @@ class Header extends Component {
                                     <a href="/steam-pathways" type="button" class="btn rounded-pill btn-lg" id="getstarted">Check out our new virtual program!</a>
                                 </div>
                             </div>
+                        </div>
                     </body>
             </header>
           );
