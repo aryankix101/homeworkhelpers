@@ -22,6 +22,10 @@ code {
  font: bolder 50px Cinzel; 
 }
 
+#navbartext {
+  font: 15px Poppins; 
+}
+
 #titletext {
   color: white; 
   font: bold 20px Poppins; 
@@ -29,7 +33,7 @@ code {
 }
 
 #video {
-  margin-left: 410px;
+  margin-left: 370px;
   font-family: Chilanka;
   color: white;
   background-color: #F76C6C;
@@ -37,6 +41,11 @@ code {
 
 #submitcontact {
   font-family: Chilanka;
+  color: white;
+  background-color: #F76C6C;
+}
+
+#loginsubmit {
   color: white;
   background-color: #F76C6C;
 }
@@ -57,6 +66,11 @@ p {
 section.success {
   color: #fff;
   background: #18bc9c;
+}
+
+section.notsuccess {
+  color: #fff;
+  background: #A8D0E6;
 }
 
 hr.star-light,
@@ -142,4 +156,23 @@ form .row:first-child .floating-label-form-group {
 
 #footer {
   padding-top: 30px;
+}
+
+#login {
+  padding-top:100px;
+}
+
+#badge_text {
+  font-family: Chilanka;
+  color: white;
+}
+
+#background_image{
+  background-image: url(./MembersCollage.png);
+  background-size: 1540px 925px;
+}
+
+#curriculum {
+  margin-top:125px;
+  margin-left:100px;
 }

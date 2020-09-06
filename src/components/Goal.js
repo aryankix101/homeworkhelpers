@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Projections from '../projections.webp'
 
 class GoalsPage extends Component {
     state = {  }
@@ -19,6 +20,7 @@ class GoalsPage extends Component {
 <br/>Displayed below are our progress and projections:
 
 </p>
+                                    <img src={Projections}/>
                                 </div>
                             </div>
                         </div>

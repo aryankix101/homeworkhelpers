@@ -1,4 +1,3 @@
-
 import React, { Component } from 'react';
 
 class Header extends Component {
@@ -7,16 +6,17 @@ class Header extends Component {
         return (
             <header>
                     <body>
-                        <style>{'body { background-color: #A8D0E6; }'}</style>
+                        <div id="background_image">
                             <div class="container">
                                 <div class="col-lg-12">
                                     <h2 id="title" style={{textAlign: "center"}}>WE ARE HOMEWORK HELPERS</h2>
                                     <hr class="star-light"/>
                                     <p id="titletext">We are an organization that aims to provide educational assistance to students attending Title 1 schools.</p>
-                                    <a href="https://drive.google.com/file/d/16xzAAp-xLIjVT-1qteEF6fEM7vX7x1M7/view" target="_blank" type="button" class="btn rounded-pill btn-lg" id="video">Video!</a>
-                                    <a href="" type="button" class="btn rounded-pill btn-lg" id="getstarted">Get Started</a>
+                                    <a href="https://www.youtube.com/watch?v=UJXNMVRarQ0&feature=youtu.be" target="_blank" type="button" class="btn rounded-pill btn-lg" id="video">Video!</a>
+                                    <a href="/steam-pathways" type="button" class="btn rounded-pill btn-lg" id="getstarted">Check out our new virtual program!</a>
                                 </div>
                             </div>
+                        </div>
                     </body>
             </header>
           );

@@ -5,7 +5,7 @@ class StoryPage extends Component {
     state = {  }
     render() { 
         return (
-            <section id="story">
+            <section class="notsuccess"  id="story">
                         <div class="container">
                             <div class="row">
                                 <div class="col-lg-12 text-center">
