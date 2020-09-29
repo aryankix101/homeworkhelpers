@@ -12,7 +12,8 @@ class LoginPage extends Component {
           student_first_name: '',
           student_badge: '',
           student_completed_pathway : '',
-          send: false
+          send: false,
+          error: ''
         }
     
         this.onChange = this.onChange.bind(this)
@@ -24,6 +25,11 @@ class LoginPage extends Component {
       }
         
       handleSubmit(event) {
+        var x = document.forms["signin"]["username"].value;
+        if (x == "") {
+        alert("Username must be filled out");
+        return false;
+        }
         event.preventDefault();
         fetch("/login_user", {
           method:"POST",
@@ -37,16 +43,19 @@ class LoginPage extends Component {
       return response.json()
     })
     .then(json => {
-    this.setState({student_first_name: json.first_name}, () => console.log("Data: " + this.state.student_first_name))
-    this.setState({student_badge: json.badge}, () => console.log("Data: " + this.state.student_badge))
-    this.setState({student_completed_pathway: json.completed_pathway}, () => console.log("Data: " + this.state.student_completed_pathway))
+    this.setState({error: json.error}, () => console.log("Error: " + this.state.error))
+    this.setState({student_first_name: json.first_name}, () => console.log("Data student name: " + this.state.student_first_name))
+    this.setState({student_badge: json.badge}, () => console.log("Data student badge: " + this.state.student_badge))
+    this.setState({student_completed_pathway: json.completed_pathway}, () => console.log("Data student pathway: " + this.state.student_completed_pathway))
     })
+    console.log(this.state.error)
       }
 
       handleClick = () => {
-        this.setState({send: true}, () =>
-        console.log(this.state.send));
-    }
+        this.setState({send: true})
+        console.log("Works")
+        
+    } 
     
     render() { 
         return (
@@ -56,7 +65,7 @@ class LoginPage extends Component {
                 <style>{'body { background-color: #A8D0E6; }'}</style>
                 <div className="row">
                     <div className="col-md-6 mt-5 mx-auto">
-                        <form onSubmit={this.handleSubmit}>
+                        <form name="signin" className="form-group" onSubmit={this.handleSubmit}>
                         <h1 className="h3 mb-3 font-weight-normal">Please sign in</h1>
                         <div className="form-group">
                             <label>Username</label>
@@ -78,7 +87,8 @@ class LoginPage extends Component {
                         </form>
                     </div>
                 </div>
-                {this.state.send && <StudentDashboardPage student_first_name={this.state.student_first_name} student_badge={this.state.student_badge} student_completed_pathway={this.state.student_completed_pathway} />}
+
+                {this.state.send==true && <StudentDashboardPage student_first_name={this.state.student_first_name} student_badge={this.state.student_badge} student_completed_pathway={this.state.student_completed_pathway} error={this.state.error} />}
                 </body>
             </div>
             </Zoom>

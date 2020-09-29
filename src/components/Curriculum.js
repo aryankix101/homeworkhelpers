@@ -26,7 +26,6 @@ class CurriculumPage extends Component {
                 <li>Google Tools</li>
                 <li>CAD 3D</li>
                 <li>App Development</li>
-                <br/>
                 <p><h1>Science</h1></p>
                 <li>Earth Science</li>
                 <li>Ecology</li>
@@ -49,7 +48,7 @@ class CurriculumPage extends Component {
                 <p><h1>Art</h1></p>
                 <li>Art</li>
                 <li>And more!</li>
-
+                <br/>
             </body>
         </div>
         </Zoom>

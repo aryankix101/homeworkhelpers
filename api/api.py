@@ -1,13 +1,8 @@
 import os
 import time
 from flask import Flask, jsonify, request, abort, render_template, redirect, url_for, json
-from flask_pymongo import PyMongo 
-from bson.objectid import ObjectId 
 from datetime import datetime 
-from flask_bcrypt import Bcrypt 
 from flask_cors import CORS
-from flask_jwt_extended import JWTManager 
-from flask_jwt_extended import create_access_token
 # Google Sheets API Setup
 import gspread
 from oauth2client.service_account import ServiceAccountCredentials
@@ -18,7 +13,7 @@ app = Flask(__name__)
 credential = ServiceAccountCredentials.from_json_keyfile_name("credentials.json",
                                                               ["https://spreadsheets.google.com/feeds",                                                               "https://www.googleapis.com/auth/spreadsheets",                                                        "https://www.googleapis.com/auth/drive.file",                                                        "https://www.googleapis.com/auth/drive"])
 client = gspread.authorize(credential)
-gsheet = client.open("Certificate Data").sheet1
+gsheet = client.open("Student Data").sheet1
 
 CORS(app)
 
@@ -31,7 +26,7 @@ def login():
         data = get_spreadsheet_data(username)
         print(data)
         return data
-    return {"first_name": "error"}
+    return {"error": "No username entered."}
 
 @app.route('/spreadsheet-data', methods=["GET"])
 def get_spreadsheet_data(username):

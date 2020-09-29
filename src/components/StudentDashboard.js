@@ -21,8 +21,13 @@ import scratch_badge from '../badges/scratch_badge.png'
 import video_production_badge from '../badges/video_production_badge.png'
 import web_dev_badge from '../badges/web_dev_badge.png'
 
-const StudentDashboardPage = ({student_first_name, student_badge, student_completed_pathway}) =>  {
-        let img = '';
+const StudentDashboardPage = ({student_first_name, student_badge, student_completed_pathway, error}) =>  {
+        let str_badge = student_badge;
+        let img = ''
+        function refreshPage() {
+          window.location.reload(false);
+        }
+        if (typeof error =='undefined' || error=='') {  
         if (student_badge=="CAD_badge") {
           img = CAD_badge;
         }
@@ -77,19 +82,33 @@ const StudentDashboardPage = ({student_first_name, student_badge, student_comple
         if (student_badge=="web_dev_badge") {
           img = web_dev_badge;
         }
-        let str_badge = student_badge;
+        console.log("Testing: " + str_badge)
         str_badge = str_badge.replaceAll("_", " ");
         return (
-            <Zoom>
-            <div>
-            <p><h1>Hello {student_first_name}!</h1></p>
-            <p><h2>You have completed the following badges:</h2></p>
-            <img src = {img} width="200" heigh="60"/>
-            <p id="badge_text">{str_badge}</p>
-            <p><h2>Congratulations! You have finished the {student_completed_pathway}!</h2></p>
-            </div>
-            </Zoom>
-          );
+          <Zoom>
+          <div>
+          <p><h1>Hello {student_first_name}!</h1></p>
+          <p><h2>You have completed the following badges:</h2></p>
+          <img src = {img}width="200" heigh="60"/>
+          <p id="badge_text">{str_badge}</p>
+          <p><h2>Congratulations! You have finished the {student_completed_pathway}!</h2></p>
+          </div>
+          </Zoom>
+        );
+        } 
+        else {
+          return (
+          <div>
+          <div class="alert alert-danger" role="alert">
+           Error.
+          </div>
+          <div>
+          {refreshPage()}
+          </div>
+          </div>
+          )
+        }
+        
 }
  
 export default StudentDashboardPage;
